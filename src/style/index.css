@@ -1,0 +1,70 @@
+/* Main Container */
+.parent{
+    position: relative;
+    width: 100%;
+    height: fill;
+    overflow-y: hidden;
+}
+
+.child {
+    width: fit-content;
+    text-align: left;   
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+}
+
+.container {
+    width: 500px;
+    height: fit-content;
+    align-items: left;
+    padding: 15px 15px 15px 15px;
+}
+
+/* Definition Box */
+.definitionContainer {
+    height: 200px;
+    width: 507px;
+    overflow-y: hidden;
+    border-radius: 5px;
+}
+
+.definitionContainer:hover {
+    overflow-y: scroll;
+}
+
+pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    margin-right: 12px;
+    font-family: "font";
+    font-size: 25px;
+    width: 507px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.inner {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Scrollbar (todo: transparent background/rounded) */
+#style-2::-webkit-scrollbar-track
+{
+    width: 0px;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 0px;
+}
+
+#style-2::-webkit-scrollbar-thumb::before
+{
+	width: 0px;
+}
